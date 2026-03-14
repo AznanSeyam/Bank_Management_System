@@ -1,6 +1,5 @@
 "use client";
 
-import { useRouter } from "next/navigation";
 
 export default function Login() {
   const [email, setEmail] = useState("");
