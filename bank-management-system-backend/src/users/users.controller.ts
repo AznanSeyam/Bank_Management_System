@@ -19,7 +19,7 @@ export class UsersController {
   @Delete('delete')
   async deleteUser(@Body() body: { userId: number; password: string }) {
     if (!body.userId || !body.password) {
-      throw new BadRequestException("User ID and password are required.");
+      throw new BadRequestException("User ID and password are required.")
     }
     return this.usersService.deleteUser(body.userId, body.password);
   }
