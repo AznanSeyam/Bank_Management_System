@@ -13,7 +13,6 @@ export class Transaction {
   receiver: User;
 
   @Column({ type: 'decimal', precision: 10, scale: 2 })
-  amount: number;
 
   @CreateDateColumn({ type: 'timestamp' }) 
   createdAt: Date;
