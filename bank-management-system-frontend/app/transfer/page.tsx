@@ -5,7 +5,6 @@ import { useRouter } from "next/navigation";
 
 export default function Transfer() {
   const router = useRouter();
-  const [receiverId, setReceiverId] = useState("");
   const [amount, setAmount] = useState("");
   const [message, setMessage] = useState("");
   const [userId, setUserId] = useState<string | null>(null);
